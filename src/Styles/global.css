@@ -32,9 +32,11 @@ a:visited
 
 .navbar
 {
-    padding-top: 0 !important;
+    padding-top: 15px;
     padding-bottom: 0 !important;
 }
+
+
 
 header ul
 {
@@ -55,7 +57,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     display: block;
     text-align: center;
@@ -75,7 +77,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 100px;
+    font-size: 80px;
     line-height: 122px;
     color: #171F33;
 }
@@ -85,7 +87,7 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 150%;
     color: #63666F;
 }
@@ -96,7 +98,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     color: #63666F;
     padding-right: 35px;
@@ -109,7 +111,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 80px;
+    font-size: 64px;
     line-height: 98px;
     color: #171F33;
 }
@@ -124,7 +126,7 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 150%;
     color: #63666F;
 }
@@ -136,7 +138,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 27px;
     line-height: 39px;
     color: #FFFFFF;
 }
@@ -146,12 +148,17 @@ header ul li a
     display: flex;
 }
 
+footer{
+    position: relative;
+    z-index: 15;
+}
+
 .footer-heading h2
 {
     font-family: 'Monda';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 23px;
     line-height: 46px;
     color: #FFFFFF;
 }
@@ -161,7 +168,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
 }
@@ -171,18 +178,25 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 150%;
     color: rgba(255, 255, 255, 0.4);
 }
 
-.footer-details i
+.footer-icons
 {
     color: #FFFFFF;
     background: #202B46;
     border-radius: 50%;
     padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
 }
+
 
 .footer-details ul li
 {
@@ -191,12 +205,17 @@ header ul li a
     padding-left: 0;
 }
 
+.hamberger-menu
+{
+    display: none;
+}
+
 .box-details h3
 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     color: #171F33;
 }
@@ -206,39 +225,31 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 150%;
     color: #63666F;
 }
 
 .box
 {
-    height: auto;
+    height: 300px;
     width: 100%;
     border: 1px solid #63666F33;
 }
-
-.box-icon
-{
-    position: relative;
-    margin-top: -100px;
-}
-
-.box-icon img
-{
-    height: 120px;
-    width: 120px;
-}
-
 
 .letsgo h2{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 23px;
     line-height: 39px;
     color: #171F33;
     margin-left: 25px;
+}
+
+.contact-us--form{
+    width: 90%;
+    float: right;
 }
 
 .contactus h4
@@ -246,21 +257,20 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     color: #AC2027;
 }
 
 .service-header{
     margin: auto auto;
-    width: 50%;
     text-align: center;
 
 }
 
 .service-header h1{
     font-family: 'Montserrat', sans-serif;
-  font-size: 80px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 800;
   line-height: 120px;
@@ -268,28 +278,14 @@ header ul li a
   color:#171F33;
 }
 
-.upper-left h1{
-    position: absolute;
-    width: 408px;
-    height: 98px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 98px;
-    color: #171F33;
-}
-
-
-.upper-right{
-    padding-top: 30px;
+.service-header p
+{
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 15px;
     line-height: 150%;
-    color: #63666E;
+    color: #63666F;
 }
 
 .gallery_header h2{
@@ -299,7 +295,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 59px;
 
 }
@@ -309,7 +305,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 32px;
     color: #171F33;
 }
@@ -319,7 +315,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 32px;
     color: #63666F;
     opacity: 0.6;
@@ -337,7 +333,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 29px;
     color: #63666F;
     opacity: 0.6;
@@ -463,7 +459,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
@@ -485,7 +481,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     color: #171F33;
 }
@@ -495,7 +491,7 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 150%;
     color: #63666F;
 }
@@ -505,7 +501,7 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 150%;
     color: #63666F;
     margin-left: 15px;
@@ -516,7 +512,7 @@ header ul li a
     border: 1px solid rgba(99, 102, 111, 0.2);
     box-sizing: border-box;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -536,15 +532,19 @@ header ul li a
 .search-txt input
 {
     border: none;
+    width: 40rem;
+    height: 3.8rem;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 150%;
     color: rgba(99, 102, 111, 0.6);
     padding-left: 25px;
 }
-
+textarea:focus, input:focus{
+    outline: none;
+}
 .search-btn a i
 {
     padding-right: 25px;
@@ -563,7 +563,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 150%;
     color: #63666F99;
 }
@@ -573,7 +573,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 32px;
     color: #63666F;
 }
@@ -584,7 +584,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 39px;
     color: #171F33;
 }
@@ -594,7 +594,7 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 150%;
     color: #63666F;
 }
@@ -611,7 +611,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 150%;
     color: rgba(99, 102, 111, 0.6);
     padding: 5px 0px;
@@ -621,7 +621,7 @@ header ul li a
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 49px;
     color: #171F33;
 }
@@ -631,8 +631,231 @@ header ul li a
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 150%;
     color: #63666F;
 }
 
+.upper-left h1{
+    position: absolute;
+    width: 408px;
+    height: 98px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 98px;
+    color: #171F33;
+}
+
+
+.upper-right p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #63666E;
+}
+
+
+b
+{
+    color: #171F33;
+}
+
+.whats-app {
+    position: fixed;
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    z-index: 100;
+    right: 15px;
+}
+
+.whats-app i
+{
+    background: none;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.overlay{
+    display: block;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(23, 31, 51);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.gallery-img{
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 500px) {
+    .overlay{
+        width: 100vw;
+        height: calc(100vh - 100px);
+        background-color: rgb(23, 31, 51);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: 10;
+    }
+    .menu
+    {
+        display: none;
+    }
+
+    .hamberger-menu
+    {
+        display: block;
+        color: #101010;
+        font-size: 24px;
+        float: right;
+    }
+
+    .menu-mobile-view
+    {
+        top: 75px;
+        /* left: 120%; */
+        display: block;
+        position: absolute;
+        padding: 50px 0px;
+        width: 100%;
+        background: #ffffff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    header ul li
+    {
+        float: none;
+    }
+
+    header ul li a
+    {
+        text-align: left;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .head h1
+    {
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+    .head h3
+    {
+        font-size: 15px;
+    }
+
+    .head-nxt
+    {
+        display: block;
+        text-align: center;
+    }
+
+    /* .head-img,
+    .home2 p, .home3 p, .home6 p, .latest-post p, .post-deatails p
+    {
+        padding: 1rem !important;
+    } */
+
+    .home2 p, .home3 p, .home6 p, .service-header p, .latest-post p, .post-deatails p
+    {
+        font-size: 15px;
+    }
+    
+    .home1 h2, .home6 h2, .latest-post h2
+    {
+        font-size: 27px;
+        line-height: 39px;
+    }
+
+    .home4
+    {
+        padding: 2rem;
+    }
+    .home4 p
+    {
+        width: 100%;
+        font-size: 19px;
+    line-height: 29px;
+    }
+
+    .home5, .home2, .home3
+    {
+        padding: 0rem !important;
+    }
+
+    .letsgo
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+
+    .letsgo h2
+    {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contactus
+    {
+        justify-content: center !important;
+    }
+
+    .service-header h1
+    {
+        font-size: 25px;
+        line-height: 39px;
+    }
+
+    .box-details p,
+    .box-details h3,
+    .upper-right p
+    {
+        font-size: 15px;
+        line-height: 150%;
+    }
+    
+    .upper-left h1
+    {
+        font-size: 25px;
+        line-height: 39px;
+    }
+
+    .message-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .message input
+    {
+        margin-top: 20px;
+    }
+
+    .search-txt input
+    {
+        width: 19rem;
+    }
+
+}

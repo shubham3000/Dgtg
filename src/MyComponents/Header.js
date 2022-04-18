@@ -1,42 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { GiHamburgerMenu } from "react-icons/gi";
 
-
-export default function Header() {
+export default function Header(props) {
+    const [ showMediaIcons, SetshowMediaIcons ]= useState(false);
+    const showNav = props.showNav??true;
   return (
     <header>
+
         <div className="container">
             <div className="navbar">
                 <div className="logo">
-                   <a href='index.html'><img src="images/Home/dgtglogo.png" width="84px" height="46px" alt='' /></a>
+                   <Link to="/"><img src="images/Home/dgtglogo.png" width="84px" height="46px" alt='' /></Link>
                 </div>
-                <div className="toggle" onclick="togglemenu();"></div>
-                <ul className="menu">
-                    <li>
-                        <Link to="Home.js" className="active" onclick="togglemenu();">Home</Link>
-                    </li>
-                    <li>
-                        <a href="services.html" onclick="togglemenu();">Services</a>
-                    </li>
-                    <li>
-                        <a href="ourteam.html" onclick="togglemenu();">Our Team</a>
-                    </li>
-                    <li>
-                        <Link to="Aboutus.js" onclick="togglemenu();">About Us</Link>
-                    </li>
-                    <li>
-                        <a href="ourwork.html" onclick="togglemenu();">Our Work</a>
-                    </li>
-                    <li>
-                        <a href="career.html" onclick="togglemenu();">Career</a>
-                    </li>
-                    <li>
-                        <a href="blog.html" onclick="togglemenu();">Blogs</a>
-                    </li>
-                    <li>
-                        <a href="contactus.html" className="active-bg" onclick="togglemenu();">Contact Us</a>
-                    </li>
-                </ul>
+                {showNav?
+                <div className={showMediaIcons ? "menu menu-mobile-view" : "menu"}>
+                    <ul className="menu-list">
+                        <li>
+                            <Link to="/" className="active" >Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/services">Services</Link>
+                        </li>
+                        <li>
+                            <Link to="/team" >Our Team</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About Us</Link>
+                        </li>
+                        <li>
+                            <Link to="/ourwork">Our Work</Link>
+                        </li>
+                        <li>
+                            <Link to="/career">Career</Link>
+                        </li>
+                        <li>
+                            <Link to="/blog">Blogs</Link>
+                        </li>
+                        <li>
+                            <Link to="/contactus" className="active-bg">Contact Us</Link>
+                        </li>
+                    </ul>
+                </div>
+                :""}
+                <div className="hamberger-menu">
+                        <a href='#' onClick={() => SetshowMediaIcons(!showMediaIcons)}>
+                            <GiHamburgerMenu />
+                        </a>
+                </div>
             </div>
 
         </div>
